@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* input:valid~label, */
+        input:focus~label {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <section class="w-full relative p-5">
+        <div class="">
+            <img width="200px" src="images/logo.png" alt="">
+        </div>
+        <div class=" mt-8 w-full h-full">
+            <div class="max-w-[350px] my-5  mx-auto">
+                <h2 class="text-center text-2xl font-bold text-[#2f1c6a]">Login</h2>
+                <div class="w-full text-center my-5 md:flex md:justify-center">
+                    <button class="w-full md:w-20 my-2 border-2 border-slate-200 px-6 py-2 rounded h-12 md:mx-1">
+                        <i class="fa-brands fa-google fa-lg"></i>
+                        <p class="inline font-bold text-[#1d1e20] mx-1 md:hidden">Google</p>
+                    </button>
+                    <button
+                        class="w-full md:w-20 my-2 px-6 py-2 rounded text-white bg-[#1877f2] h-12 flex items-center justify-center md:mx-1">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        <p class="inline font-bold text-white mx-3 md:hidden">Facebook</p>
+                    </button>
+                </div>
+
+                <div class="relative w-full my-10">
+                    <hr>
+                    <p class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 bg-white">atau</p>
+                </div>
+
+                <form action="#" class="w-full">
+                    <div class="form-control my-4 relative h-12">
+                        <input id="email" type="email"
+                            class="w-full h-12 border-2 px-4 py-2 rounded text-lg focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm">
+                        <label for="email"
+                            class="absolute block z-10 items-center left-5 px-2 top-3 bg-white transition-all">Email</label>
+                    </div>
+                    <div class="my-4 relative h-12">
+                        <input id="password" type="password"
+                            class="absolute w-full h-12 border-2 px-4 py-2 text-lg rounded focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm">
+                        <label for="password"
+                            class="absolute block z-10 items-center left-5 px-2 top-3 bg-white transition-all">Password</label>
+                        <div class="absolute z-20 right-4 top-3 text-slate-800">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <button class="w-full bg-[#6747c7] px-5 py-4 h-14 rounded text-white font-bold my-4">Login</button>
+                </form>
+                <p class="text-center my-5 text-[#6747c7] font-bold">
+                    <a href="#">
+                        Lupa kata sandi?
+                </p>
+                </a>
+                <h5 class="text-center my-5 font-bold">Belum punya akun? <a href="#"> <span class="text-[#6747c7]">Pilih
+                            paket hosting </span> </a> dan buat akun.</h5>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
