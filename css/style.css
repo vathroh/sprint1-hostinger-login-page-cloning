@@ -528,6 +528,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -616,6 +620,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-\[10px\] {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mt-24 {
@@ -714,6 +723,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 48px;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -779,6 +792,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#6747c7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(103 71 199 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-5 {
