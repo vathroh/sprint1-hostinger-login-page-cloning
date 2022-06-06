@@ -11,63 +11,69 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* input:valid~label, */
-        input:focus~label {
+        /* input:not(:placeholder-shown), */
+        input:valid ~ label,
+        input:focus ~ label {
             transform: translateY(-100%);
         }
     </style>
 </head>
 
-<body class="font-sans">
+<body>
     <section class="w-full relative p-5">
-        <div class="">
+        <div class="absolute">
             <img width="200px" src="images/logo.png" alt="">
         </div>
-        <div class=" mt-8 w-full h-full">
+        <div class="w-full h-full mt-16">
             <div class="max-w-[350px] my-5  mx-auto">
-                <h2 class="text-center text-2xl font-bold text-[#2f1c6a]">Login</h2>
-                <div class="w-full text-center my-5 md:flex md:justify-center">
-                    <button class="w-full md:w-20 my-2 border-2 border-slate-200 px-6 py-2 rounded h-12 md:mx-1">
-                        <i class="fa-brands fa-google fa-lg"></i>
+                <h2 class="text-center text-2xl text-[#2f1c6a] font-extrabold">Log in</h2>
+                <div class="text-center my-6 md:flex md:justify-center">
+                    <button class="w-full md:w-[72px] border-2 border-slate-200 px-6 py-2 rounded h-[48px] md:mx-[10px] mx-1">
+                        <!-- <i class="fa-brands fa-google fa-lg"></i> -->
+                        <img src="/images/icons8-google-96.png" />
                         <p class="inline font-bold text-[#1d1e20] mx-1 md:hidden">Google</p>
                     </button>
                     <button
-                        class="w-full md:w-20 my-2 px-6 py-2 rounded text-white bg-[#1877f2] h-12 flex items-center justify-center md:mx-1">
-                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        class="w-full md:w-[72px] px-6 py-2 rounded text-white bg-[#1877f2] h-[48px] flex items-center justify-center md:mx-[10px] mx-1">
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                        <p class="inline font-bold text-white mx-3 md:hidden">Facebook</p>
+                    </button>
+                    <button
+                        class="w-full  md:w-[72px] px-6 py-2 rounded text-white bg-black h-[48px] flex items-center justify-center md:mx-[10px] mx-1">
+                        <i class="fa-brands fa-github fa-lg"></i>
                         <p class="inline font-bold text-white mx-3 md:hidden">Facebook</p>
                     </button>
                 </div>
 
-                <div class="relative w-full my-10">
+                <div class="relative w-full mt-9">
                     <hr>
-                    <p class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 bg-white">atau</p>
+                    <p class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 bg-white text-slate-500 text-sm">or</p>
                 </div>
 
-                <form action="#" class="w-full">
-                    <div class="form-control my-4 relative h-12">
-                        <input id="email" type="email"
-                            class="w-full h-12 border-2 px-4 py-2 rounded text-lg focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm">
-                        <label for="email"
-                            class="absolute block z-10 items-center left-5 px-2 top-3 bg-white transition-all">Email</label>
+                <form action="#" class="w-full text-slate-500 mt-6">
+                    <div class="form-control mt-4 mb-[18px] relative h-12">
+                        <input id="email" type="text"
+                            class="w-full h-12 border-2 px-4 py-2 rounded text-lg focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm" required>
+                        <label for="text"
+                            class="absolute block z-10 items-center left-2 px-2 top-3 bg-white transition-all text-sm">Email</label>
                     </div>
-                    <div class="my-4 relative h-12">
+                    <div class="my-[10px] relative h-12">
                         <input id="password" type="password"
-                            class="absolute w-full h-12 border-2 px-4 py-2 text-lg rounded focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm">
+                            class="absolute w-full h-12 border-2 px-4 py-2 text-lg rounded focus:outline-none focus:border-[#673de6] focus:shadow-[#673de6] focus:shadow-sm" required>
                         <label for="password"
-                            class="absolute block z-10 items-center left-5 px-2 top-3 bg-white transition-all">Password</label>
+                            class="absolute block z-10 items-center left-2 px-2 top-3 bg-white transition-all text-sm">Password</label>
                         <div class="absolute z-20 right-4 top-3 text-slate-800">
                             <i class="fa-solid fa-eye"></i>
                         </div>
                     </div>
-                    <button class="w-full bg-[#6747c7] px-5 py-4 h-14 rounded text-white font-bold my-4">Login</button>
+                    <button class="w-full bg-[#6747c7] px-5 py-4 h-14 rounded text-white font-bold my-4 text-sm">Log in</button>
                 </form>
-                <p class="text-center my-5 text-[#6747c7] font-bold">
+                <p class="text-center my-5 text-[#6747c7] font-bold text-sm">
                     <a href="#">
-                        Lupa kata sandi?
+                        Forgot password?
                 </p>
                 </a>
-                <h5 class="text-center my-5 font-bold">Belum punya akun? <a href="#"> <span class="text-[#6747c7]">Pilih
-                            paket hosting </span> </a> dan buat akun.</h5>
+                <h5 class="text-center my-5 font-bold">Not a member yet? <a href="#"> <span class="text-[#6747c7]">Choose a hosting plan </span> </a> and get started now!</h5>
             </div>
         </div>
     </section>
